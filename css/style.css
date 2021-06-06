@@ -41,6 +41,9 @@
   --special-light: #FBDED7;
   --special-dark: #F6B5A5;
   --special-link: #EDEDED;
+  --pattern: #eadcbe;
+  --raspberry-background: #73172b;
+  --chocolate-bacground: #3a2217;
 }
 .page-body {
   min-width: 960px;
@@ -179,10 +182,12 @@ border-radius: 70px;
   color: var(--basic-white);
 }
 .index-banner-1 {
+  background-color: var(--raspberry-background);
   background-image: url(../img/background-images/raspberry-background.jpg);
   background-repeat: no-repeat;
   width: 560px;
   height: 229px;
+  border-radius: 16px;
 }
 .index-banner-1 h2 {
   font-weight: bold;
@@ -212,10 +217,12 @@ border-radius: 70px;
   color: var(--basic-white);
 }
 .index-banner-2 {
+  background-color: var(--chocolate-bacground);
   background-image: url(../img/background-images/chocolate-background.jpg);
   background-repeat: no-repeat;
   width: 560px;
   height: 229px;
+  border-radius: 16px;
 }
 .index-banner-2 h2 {
   font-weight: bold;
@@ -245,6 +252,12 @@ border-radius: 70px;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+}
+.features {
+  background-color: var(--pattern) ;
+  background-image: url(../img/background-images/waffle.png);
+  background-repeat: no-repeat;
+  border-radius: 16px;
 }
 .features h2 {
   font-weight: 500;
@@ -282,11 +295,18 @@ border-radius: 70px;
   text-decoration: underline;
   border-bottom: none;
 }
+.subscribe-border {
+  background-image: url(../img/background-images/mail-background.png);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  width: 560px;
+  height: 220px;
+}
 .subscribe {
   background: var(--basic-white-dark);
-  background-image: url(../img/background-images/mail-background.png);
-  background-repeat: repeat;
   border-radius: 16px;
+  width: 100%;
+  height: 100%;
 }
 .subscribe p {
   font-weight: normal;
@@ -350,6 +370,7 @@ list-style: none;
   font-weight: normal;
   font-size: 13px;
   line-height: 15px;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 .login {
   background: var(--basic-white);
@@ -389,7 +410,6 @@ list-style: none;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   box-shadow: inset 0px 2px 2px #942718;
   border-radius: 26px;
-
 }
 
 
