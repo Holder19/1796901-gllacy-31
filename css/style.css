@@ -41,6 +41,7 @@
   --raspberry-background: #73172b;
   --chocolate-bacground: #3a2217;
   --special-gray: #d3d3d2;
+  --special-border-gray: #696969;
 }
 
 .page-body {
@@ -68,6 +69,7 @@
   border: none;
   border-radius: 70px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  font-weight: bold;
 }
 
 .index-main-btn {
@@ -76,28 +78,45 @@
 }
 
 .btn:hover {
-  background-image: linear-gradient(0deg,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)),
-  linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+  background-image: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: 0px 2px 2px #ac1000;
   border-radius: 70px;
 }
 
 .btn:active {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
-  linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+    linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0px 2px 2px #942718;
   border-radius: 70px;
 }
 
 .btn-link {
-  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  background: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
 }
 
 .page-body a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.link-style {
   color: var(--basic-white);
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link-style:hover {
+  color: var(--basic-orange-light);
+}
+
+.link-style:active {
+  color: var(--basic-orange-light);
 }
 
 .main-navigation {
@@ -358,4 +377,168 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+}
+/* catalog */
+.inner-page {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%);
+  background-repeat: repeat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.catalog-navigation {
+  font-weight: bold;
+}
+
+.catalog-current {
+  background: var(--special);
+  border-radius: 26px;
+}
+
+.time-work {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.common-modal-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+.inner-page .btn-basket-active {
+  background: var(--basic-white);
+  border-radius: 20px;
+  color: var(--basic-black);
+}
+
+.common-modal-btn:hover {
+  background: var(--basic-white);
+  color: var(--basic-black)
+}
+
+.breadcrumbs {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.page-catalog .breadcrumbs-current {
+  border-bottom: none;
+
+}
+
+.page-catalog h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.catalog-filters fieldset {
+  border: none;
+}
+
+.filter-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-title label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.catalog-filter-wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.wrapper-sort {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.wrapper-sort:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--basic-black);
+}
+
+.btn-accept {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--basic-white);
+  border-radius: 20px;
+  color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.btn-accept:hover {
+  background: var(--basic-white);
+  border-radius: 20px;
+  color: var(--basic-black);
+}
+
+.btn-accept:active {
+  box-shadow: inset 0px 2px 1px var(--special-border-gray);
+}
+
+.menu-list {
+  list-style: none;
+}
+/* фон накладывается поверх картинки при наведении,как это можно исправить ? */
+.menu-list li:hover {
+  background: var(--basic-white);
+  opacity: 0.2;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.menu-list p {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.pagination {
+  list-style: none;
+}
+
+.pagination .pagination-item {
+  border-bottom: none;
+}
+
+.pagination .pagination-item-current {
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.pagination-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+}
+
+.pagination-item:active {
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.social-list .btn-social {
+  border-bottom: none;
 }

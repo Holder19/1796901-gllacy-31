@@ -34,16 +34,16 @@
       <ul class="common-modal">
         <li class="common-modal-item">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <button class="btn-search" type="submit">Поиск</button>
+            <button class="common-modal-btn btn-search" type="submit">Поиск</button>
             <label for="search"></label>
             <input type="search" name="search" id="search" placeholder="Крем-брюле">
           </form>
         </li>
-        <li class="common-modal-item"><a class="btn-login" href="blank.html">Вход</a></li>
-        <li class="common-modal-item"><a class="btn-basket" href="blank.html">Пусто</a></li>
+        <li class="common-modal-item"><a class="common-modal-btn btn-login" href="blank.html">Вход</a></li>
+        <li class="common-modal-item"><a class="common-modal-btn btn-basket" href="blank.html">Пусто</a></li>
       </ul>
-      <p>с 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+      <p class="time-work">с 10 до 20, ежедневно</p>
+      <p class="phone-number">8 812 450-25-25</p>
     </nav>
   </header>
 
@@ -83,31 +83,31 @@
       </p>
       <a class="btn btn-link" href="#">Хочу шоколадки!</a>
     </section>
-    <section hit-ice-cream>
+    <section class="hit-ice-cream">
       <h2>Список мороженного</h2>
       <ul class="hit-list">
         <li class="hit-list-item">
           <img src="img/hit-icecream/hit-1.jpg" width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>310 ₽<span class="weight">/кг</span></p>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="link-style" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
         <li class="hit-list-item">
           <img src="img/hit-icecream/hit-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <p>380 ₽<span class="weight">/кг</span></p>
-          <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="link-style" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </li>
         <li class="hit-list-item">
           <img src="img/hit-icecream/hit-3.jpg" width="267" height="267"
             alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p>355 ₽<span class="weight">/кг</span></p>
-          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="link-style" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
         <li class="hit-list-item">
           <img src="img/hit-icecream/hit-4.jpg" width="267" height="267"
             alt="Сливочное крем-брюле с карамельной подливкой ">
           <p>415 ₽<span class="weight">/кг</span></p>
-          <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="link-style" href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </li>
       </ul>
     </section>
@@ -143,10 +143,12 @@
       </ul>
     </section>
     <section class="new-post">
+      <h2>блог</h2>
       <p>Новое в нашем блоге</p>
-      <a class="link-post" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a>
+      <a class="link-post link-style link-style" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a>
     </section>
     <section class="subscribe">
+      <h2>рассылка</h2>
       <div class="subscribe-inner">
       <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
@@ -178,7 +180,7 @@
           <a class="btn-social" href="#">Инстаграмм</a>
         </li>
         <li >
-          <a class="btn-social"href="#">Твиттер</a>
+          <a class="btn-social" href="#">Твиттер</a>
         </li>
       </ul>
     </section>
@@ -186,26 +188,27 @@
       <h2>Дополнительная информация</h2>
       <ul class="info-list">
         <li class="info-item-text">
-          <a href="#">Для поставщиков</a>
+          <a class="link-style" href="#">Для поставщиков</a>
         </li>
         <li class="info-item">
-          <a href="#">О производстве</a>
+          <a class="link-style" href="#">О производстве</a>
         </li>
         <li class="info-item">
-          <a href="#">Наши документы</a>
+          <a class="link-style" href="#">Наши документы</a>
         </li>
         <li class="info-item">
-          <a href="#">Экологические стандарты</a>
+          <a class="link-style" href="#">Экологические стандарты</a>
         </li>
       </ul>
 
     </section>
     <section class="footer-copyright">
+      <h2>Копирайт</h2>
       <a class="logo-academy">
         <img src="https://via.placeholder.com/150x100" alt="Логотип Академии">
       </a>
       <p>
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2021
+        Сделано в <a class="link-style" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2021
       </p>
     </section>
   </footer>
@@ -221,12 +224,12 @@
                 <input class="password" type="password" id="login-password" name="password" placeholder="password">
             </p>
             <p>
-                <a class="forgot-password" href="#">Забыли пароль?</a>
+                <a class="forgot-password link-style" href="#">Забыли пароль?</a>
             </p>
             <p>
-                <a class="new-reg"href="#">Новая регистрация</a>
+                <a class="new-reg link-style" href="#">Новая регистрация</a>
             </p>
-            <button class=" btn btn-input" type="submit">Войти</button>
+            <button class="btn btn-input" type="submit">Войти</button>
         </form>
     </section>
 </body>
