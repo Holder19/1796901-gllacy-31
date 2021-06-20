@@ -145,7 +145,7 @@
 
 .main-navigation-wrapper {
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template-columns: 1fr min-content;
   width: 1146px;
   margin: 0;
   padding: 0 10px;
