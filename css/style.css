@@ -520,20 +520,11 @@
   color: var(--basic-black);
 }
 
-.breadcrumbs-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 29px;
-}
-
 .breadcrumbs {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  grid-column: 1 / -1;
 }
 
 .page-catalog .breadcrumbs-current {
@@ -543,15 +534,6 @@
 .page-catalog h1 {
   font-size: 35px;
   line-height: 41px;
-  margin: 0;
-  padding: 0;
-  grid-column: 1 / -1;
-}
-
-.catalog-filters-outer {
-  display: grid;
-  grid-template-columns: 869px;
-  margin-bottom: 40px;
 }
 
 .catalog-filters fieldset {
@@ -614,9 +596,6 @@
 
 .menu-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 0;
 }
 /* фон накладывается поверх картинки при наведении,как это можно исправить ? */
 .menu-list li:hover {
@@ -634,7 +613,6 @@
 }
 .pagination {
   list-style: none;
-  padding: 0;
 }
 
 .pagination .pagination-item {
