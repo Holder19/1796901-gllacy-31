@@ -12,7 +12,7 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
       <div class="main-navigation-wrapper">
       <a class="main-header-logo">
@@ -44,8 +44,10 @@
               <li class="common-modal-item"><a class="common-modal-btn btn-login" href="blank.html">Вход</a></li>
               <li class="common-modal-item"><a class="common-modal-btn btn-basket" href="blank.html">Пусто</a></li>
             </ul>
-            <p class="time-work">с 10 до 20, ежедневно</p>
-            <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+            <div class="work-info">
+              <p class="time-work">с 10 до 20, ежедневно</p>
+              <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+            </div>
           </div>
       </div>
     </nav>
@@ -93,24 +95,24 @@
       <h2>Список мороженного</h2>
       <ul class="hit-list">
         <li class="hit-list-item">
-          <img src="img/hit-icecream/hit-1.jpg" width="267" height="267"
+          <img src="img/creamy-ice-cream/ice-cream-1.png" width="267" height="267"
             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>310 ₽<span class="weight">/кг</span></p>
           <a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </li>
         <li class="hit-list-item">
-          <img src="img/hit-icecream/hit-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          <img src="img/creamy-ice-cream/ice-cream-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <p>380 ₽<span class="weight">/кг</span></p>
           <a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a>
         </li>
         <li class="hit-list-item">
-          <img src="img/hit-icecream/hit-3.jpg" width="267" height="267"
+          <img src="img/creamy-ice-cream/ice-cream-3.png" width="267" height="267"
             alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p>355 ₽<span class="weight">/кг</span></p>
           <a class="link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </li>
         <li class="hit-list-item">
-          <img src="img/hit-icecream/hit-4.jpg" width="267" height="267"
+          <img src="img/creamy-ice-cream/ice-cream-4.png" width="267" height="267"
             alt="Сливочное крем-брюле с карамельной подливкой ">
           <p>415 ₽<span class="weight">/кг</span></p>
           <a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -150,7 +152,7 @@
     </section>
     <div class="index-column">
       <section class="new-post">
-        <h2>блог</h2>
+        <!-- <h2>блог</h2> -->
         <p>Новое в нашем блоге</p>
         <a class="link-post link" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a>
       </section>
@@ -169,12 +171,12 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
     <section class="map">
       <h2>Где мы находимся</h2>
       <!-- здесь будет карта -->
     </section>
-    <div class="footer-container">
+    <div class="footer-wrapper">
       <section class="footer-social">
         <h2>Мы в социальных сетях</h2>
         <ul class="social-list">
@@ -199,10 +201,10 @@
             <a class="link" href="#">Для поставщиков</a>
           </li>
           <li class="info-item">
-            <a class="link" href="#">О производстве</a>
+            <a class="link" href="#">Наши документы</a>
           </li>
           <li class="info-item">
-            <a class="link" href="#">Наши документы</a>
+            <a class="link" href="#">О производстве</a>
           </li>
           <li class="info-item">
             <a class="link" href="#">Экологические стандарты</a>
@@ -235,9 +237,9 @@
                 <a class="forgot-password link" href="#">Забыли пароль?</a>
             </p>
             <p>
-                <a class="registration" href="#">Новая регистрация</a>
+                <a class="registration link" href="#">Новая регистрация</a>
             </p>
-            <button class="btn btn-input" type="submit">Войти</button>
+            <button class="btn btn-login" type="submit">Войти</button>
         </form>
     </section>
 </body>

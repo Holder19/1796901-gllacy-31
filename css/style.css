@@ -127,17 +127,12 @@
   color: var(--basic-orange-light);
 }
 
-.main-header {
-  margin-left: 27px;
-  margin-top: 9px;
-}
-
 .main-header-logo {
-  justify-self: start;
+  width: 154px;
+  height: 64px;
 }
 
 .main-navigation {
-  display: grid;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
@@ -147,14 +142,18 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   width: 1146px;
-  margin: 0;
-  padding: 0 10px;
 }
 
 .site-navigation {
+  display: flex;
+  max-width: 400px;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.site-navigation li {
+  padding-right: 32px;
 }
 
 .site-navigation a:hover {
@@ -208,21 +207,47 @@
   background: var(--special);
 }
 
+.user-navigation {
+  max-width: 280px;
+}
+
 .common-modal {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .common-modal-item {
+  margin-right: 10px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
 
+.common-modal-item:last-child {
+  margin-right: 0;
+}
+
+.work-info {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.btn-search {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  width: 1200px;
-  padding: 0 10px;
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin-top: 10px;
 }
 
 .container > p {
@@ -247,7 +272,7 @@
   background-image: url("../img/background-images/raspberry-background.jpg");
   background-repeat: no-repeat;
   width: 560px;
-  height: 229px;
+  height: 100%;
   border-radius: 16px;
 }
 
@@ -267,6 +292,15 @@
   margin-right: 30px;
 }
 
+.index-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-link {
+  margin: 42px 22px 22px auto;
+}
+
 .index-banner-chocolate {
   background-color: var(--chocolate-bacground);
   background-image: url("../img/background-images/chocolate-background.jpg");
@@ -282,7 +316,7 @@
 
 .hit-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 267px);
   gap: 26px;
   list-style: none;
   margin: 0;
@@ -291,6 +325,7 @@
 }
 
 .hit-list-item p {
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-white);
@@ -325,6 +360,8 @@
   color: var(--basic-black);
   padding-top: 24px;
   padding-left: 20px;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .features-list {
@@ -332,9 +369,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
+  padding: 0;
 }
 
 .features-list p {
+  margin: 0;
+  padding: 0;
+  margin-left: 75px;
+  margin-bottom: 33px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -342,19 +384,24 @@
 }
 
 .index-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 26px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .new-post {
+  width: 560px;
   background-color: var(--basic-white);
   background-image: url("../img/background-images/Strawberry.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+  padding-left: 20px;
+  margin-right: 26px;
 }
 
 .new-post p {
+  margin-top: 23px;
+  margin-bottom: 15px;
+  padding: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -386,6 +433,8 @@
 }
 
 .subscribe p {
+  margin: 0;
+  padding: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -401,9 +450,35 @@
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
+.main-footer {
+  padding-bottom: 25px;
+}
+
 .social-list,
 .info-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-item {
+  margin-right: 12px;
+}
+
+.social-item:last-child {
+  margin: 0;
+}
+
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .info-item {
@@ -413,31 +488,37 @@
   color: var(--basic-white);
 }
 
-.footer-container {
+.footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-social {
-  width: 164px;
+  min-width: 164px;
   justify-self: start;
   margin: 0;
 }
 
 .footer-info {
-  width: 327px;
   justify-self: center;
-  margin: 0;
+  max-width: 340px;
 }
 
 .footer-copyright {
-  max-width: 190px;
+  display: flex;
+  flex-direction: column;
+  min-width: 190px;
   justify-self: end;
+  margin: 0;
+}
+
+.footer-copyright p {
   margin: 0;
 }
 
 .footer-copyright .logo-academy {
   border-bottom: none;
+  margin-bottom: 16px;
 }
 /* окно авторизации */
 .authorization {
@@ -496,6 +577,8 @@
 }
 
 .time-work {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
 }
