@@ -54,10 +54,12 @@
   </header>
 
   <main class="container">
-    <h1>Магазин мороженного</h1>
+    <h1 class="visually-hidden">Магазин мороженного</h1>
     <p>Крем-брюле и пломбир<br> с малиновым джемом</p>
     <img src="img/sliders/slider-1.png" alt="" width="647" height="584">
-    <button class="btn index-main-btn">Давайте оба!</button>
+    <div class="slider-btn">
+      <button class="btn index-main-btn">Давайте оба!</button>
+    </div>
     <ul class="radio-list">
       <li>
         <label>
@@ -132,14 +134,14 @@
         </li>
         <li class="features-item">
           <p>
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество.
           </p>
         </li>
         <li class="features-item">
           <p>
-            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-            связывает долговременное сотрудничество.
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
         </li>
         <li class="features-item">
@@ -152,12 +154,12 @@
     </section>
     <div class="index-column">
       <section class="new-post">
-        <!-- <h2>блог</h2> -->
+        <h2 class="visually-hidden">блог</h2>
         <p>Новое в нашем блоге</p>
-        <a class="link-post link" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a>
+        <a class="link-post link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
       <section class="subscribe">
-        <h2>рассылка</h2>
+        <h2 class="visually-hidden">рассылка</h2>
         <div class="subscribe-inner">
         <p>
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
@@ -165,7 +167,7 @@
         </p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <input class="subscribe-input" type="email" id="email" name="email" placeholder="email@example.com">
-          <label for="email">email</label>
+          <label class="visually-hidden" for="email">email</label>
           <button class="btn" type="submit">Отправить</button>
         </form>
         </div>
@@ -173,12 +175,12 @@
     </main>
     <footer class="main-footer container">
     <section class="map">
-      <h2>Где мы находимся</h2>
+      <h2 class="visually-hidden">Где мы находимся</h2>
       <!-- здесь будет карта -->
     </section>
     <div class="footer-wrapper">
       <section class="footer-social">
-        <h2>Мы в социальных сетях</h2>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="btn-social" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
@@ -195,9 +197,9 @@
         </ul>
       </section>
       <section class="footer-info">
-        <h2>Дополнительная информация</h2>
+        <h2 class="visually-hidden">Дополнительная информация</h2>
         <ul class="info-list">
-          <li class="info-item-text">
+          <li class="info-item info-item-text">
             <a class="link" href="#">Для поставщиков</a>
           </li>
           <li class="info-item">
@@ -212,7 +214,7 @@
         </ul>
       </section>
       <section class="footer-copyright">
-        <h2>Копирайт</h2>
+        <h2 class="visually-hidden">Копирайт</h2>
         <a class="logo-academy">
           <img src="https://via.placeholder.com/150x100" alt="Логотип Академии">
         </a>
@@ -222,8 +224,8 @@
       </section>
     </div>
   </footer>
-  <section class="authorization">
-        <h2>Авторизация</h2>
+  <!-- <section class="authorization">
+        <h2 class="visually-hidden">Авторизация</h2>
         <form class="form-authorization" action="https://echo.htmlacademy.ru" method="post">
             <p>
                 <label for="login-email">Логин</label>
@@ -241,7 +243,7 @@
             </p>
             <button class="btn btn-login" type="submit">Войти</button>
         </form>
-    </section>
+    </section> -->
 </body>
 
 </html>
