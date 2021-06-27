@@ -89,9 +89,11 @@
 }
 
 .index-main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 261px;
   min-height: 62px;
-  padding: 9px 23px;
   font-size: 32px;
   line-height: 44px;
 }
@@ -231,7 +233,7 @@
 }
 
 .user-navigation {
-  max-width: 280px;
+  min-width: 280px;
 }
 
 .common-modal {
@@ -239,7 +241,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -271,11 +273,11 @@
 
 .main-header {
   margin-top: 10px;
-  margin-bottom: 275px;
 }
 
 .container > p {
   margin: 0;
+  margin-top: 275px;
   padding: 0;
   font-size: 60px;
   line-height: 60px;
@@ -666,19 +668,22 @@
 }
 
 .breadcrumbs-wrapper {
+  min-width: 224px;
+  max-width: 240px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 29px;
+  margin-bottom: 9px;
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: space-between;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
-  grid-column: 1 / -1;
 }
 
 .page-catalog .breadcrumbs-current {
@@ -690,20 +695,36 @@
   line-height: 41px;
   margin: 0;
   padding: 0;
-  grid-column: 1 / -1;
+  margin-bottom: 29px;
 }
 
 .catalog-filters-outer {
   display: grid;
   grid-template-columns: 869px;
   margin-bottom: 40px;
+  min-height: 130px;
+}
+.filter-sort {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 130px;
+  align-items: flex-end;
 }
 
 .catalog-filters fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .filter-title {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
 }
@@ -711,18 +732,30 @@
 .filter-title label {
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   color: var(--basic-white);
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  margin-top: 7px;
 }
 
 .wrapper-sort {
+  margin-top: 7px;
+  margin-right: 15px;
+  width: 196px;
+  padding-left: 10px;
+  height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   font-weight: 500;
@@ -736,7 +769,23 @@
   color: var(--basic-black);
 }
 
+.price-filter {
+  width: 218px;
+  margin-right: 15px;
+}
+
+.topping {
+  width: 711px;
+}
+
+.fat {
+  width: 425px;
+}
+
 .btn-accept {
+  margin-left: 14px;
+  width: 144px;
+  height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
@@ -760,8 +809,12 @@
 .menu-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 267px);
+  row-gap: 40px;
+  column-gap: 26px;
   padding: 0;
+  margin: 0;
+  text-align: center;
 }
 /* фон накладывается поверх картинки при наведении,как это можно исправить ? */
 .menu-list li:hover {
@@ -771,15 +824,34 @@
   border-radius: 4px;
 }
 
+.menu-list img {
+  margin-bottom: 17px;
+}
+
 .menu-list p {
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
 .pagination {
+  display: flex;
+  justify-content: space-between;
+  min-width: 194px;
+  max-width: 210px;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+  margin-bottom: 48px;
 }
 
 .pagination .pagination-item {
@@ -802,4 +874,9 @@
 
 .social-list .btn-social {
   border-bottom: none;
+}
+.menu-list .btn {
+  width: 200px;
+  min-height: 44px;
+  margin-top: 11px;
 }

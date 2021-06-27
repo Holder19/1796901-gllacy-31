@@ -36,7 +36,7 @@
                 <li class="common-modal-item">
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <button class="common-modal-btn btn-search" type="submit">поиск</button>
-                        <label for="search">поиск</label>
+                        <label class="visually-hidden" for="search">поиск</label>
                         <input type="search" name="search" id="search" placeholder="Крем-брюле" />
                     </form>
                 </li>
@@ -45,8 +45,10 @@
                   <a class="common-modal-btn btn-basket btn-basket-active" href="blank.html">2 товара</a>
                 </li>
             </ul>
-            <p class="time-work">с 10 до 20, ежедневно</p>
-            <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+            <div class="work-info">
+              <p class="time-work">с 10 до 20, ежедневно</p>
+              <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+            </div>
           </div>
         </div>
         </nav>
@@ -65,14 +67,14 @@
                     <a class="breadcrumbs-current">Сливочное</a>
                 </li>
             </ul>
+          </div>
         <h1>Сливочное мороженое</h1>
-        </div>
 
       <div class="catalog-filters-outer">
         <section class="catalog-filters">
-            <h2>фильтры</h2>
-            <form method="get" action="https://echo.htmlacademy.ru">
-                  <label class="filter-title">Сортировка:
+            <h2 class="visually-hidden">фильтры</h2>
+                <form class="filters-wrapper" method="get" action="https://echo.htmlacademy.ru">
+                  <label class="filter-sort filter-title">Сортировка:
                     <select class="wrapper-sort" name="sort">
                     <option value="popular" selected>по популярности</option>
                     <option value="up-price">сначала недорогие</option>
@@ -80,11 +82,13 @@
                     <option value="fat">по жирности</option>
                     </select>
                 </label>
-                    <label class="filter-title" for="range">Цена: 100 ₽ – 500 ₽</label>
+                    <div class="price-filter">
+                      <label class="filter-title" for="range">Цена: 100 ₽ – 500 ₽</label>
                       <div class="catalog-filter-wrapper">
                         <input type="range" min="100" max="500" step="1" id="range">
+                      </div>
                     </div>
-                <fieldset>
+                <fieldset class="fat">
                     <legend class="filter-title">Жирность:</legend>
                     <div class="catalog-filter-wrapper">
                     <input type="radio" value="fat-0" name="fat-percents" id="fat-0" />
@@ -101,7 +105,7 @@
                   </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="topping">
                     <legend class="filter-title">Наполнители:</legend>
                       <div class="catalog-filter-wrapper">
                     <input type="checkbox" name="chocolate" id="chocolate" checked>
@@ -126,7 +130,7 @@
       </div>
       <div class="catalog-container">
         <section>
-          <h2>Список мороженого</h2>
+          <h2 class="visually-hidden">Список мороженого</h2>
           <ul class="menu-list">
               <li>
                   <img src="img/creamy-ice-cream/ice-cream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
@@ -205,7 +209,8 @@
               </li>
           </ul>
       </div>
-            <ul class="pagination">
+            <div class="pagination-wrapper">
+              <ul class="pagination">
                 <li>
                     <a class="pagination-item" href="#">назад</a>
                 </li>
@@ -228,13 +233,18 @@
                     <a class="pagination-item" href="#">вперед</a>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
     <footer class="main-footer container">
+      <section class="map">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <!-- здесь будет карта -->
+      </section>
       <div class="footer-wrapper">
         <section class="footer-social">
-          <h2>Мы в социальных сетях</h2>
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">
             <li class="social-item">
               <a class="btn-social" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
@@ -251,16 +261,16 @@
           </ul>
         </section>
         <section class="footer-info">
-          <h2>Дополнительная информация</h2>
+          <h2 class="visually-hidden">Дополнительная информация</h2>
           <ul class="info-list">
-            <li class="info-item-text">
+            <li class="info-item info-item-text">
               <a class="link" href="#">Для поставщиков</a>
             </li>
             <li class="info-item">
-              <a class="link" href="#">О производстве</a>
+              <a class="link" href="#">Наши документы</a>
             </li>
             <li class="info-item">
-              <a class="link" href="#">Наши документы</a>
+              <a class="link" href="#">О производстве</a>
             </li>
             <li class="info-item">
               <a class="link" href="#">Экологические стандарты</a>
@@ -268,7 +278,7 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <h2>Копирайт</h2>
+          <h2 class="visually-hidden">Копирайт</h2>
           <a class="logo-academy">
             <img src="https://via.placeholder.com/150x100" alt="Логотип Академии">
           </a>
@@ -278,7 +288,7 @@
         </section>
       </div>
     </footer>
-    <section class="authorization">
+    <!-- <section class="authorization">
           <h2>Авторизация</h2>
           <form class="form-authorization" action="https://echo.htmlacademy.ru" method="post">
               <p>
@@ -297,7 +307,7 @@
               </p>
               <button class="btn btn-login" type="submit">Войти</button>
           </form>
-      </section>
+      </section> -->
 </body>
 
 </html>
