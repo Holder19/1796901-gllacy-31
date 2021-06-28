@@ -46,6 +46,7 @@
 
 .page {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .page-body {
@@ -70,7 +71,6 @@
   margin: 0;
   padding: 0;
   font: inherit;
-  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-orange);
   text-transform: none;
@@ -89,6 +89,7 @@
 }
 
 .index-main-btn {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,14 +97,13 @@
   min-height: 62px;
   font-size: 32px;
   line-height: 44px;
+  padding: 9px 23px;
 }
 
 .btn:hover {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient( 0deg,
       rgba(255, 255, 255, 0.2),
-      rgba(255, 255, 255, 0.2)
-    ),
+      rgba(255, 255, 255, 0.2)),
     linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: 0px 2px 2px #ac1000;
   border-radius: 70px;
@@ -329,6 +329,8 @@
 }
 
 .btn-link {
+  box-sizing: border-box;
+  padding: 12px 22px;
   margin-right: 22px;
   margin-bottom: 22px;
   align-self: flex-end;
@@ -431,6 +433,7 @@
 
 .new-post {
   width: 560px;
+  min-height: 220px;
   background-color: var(--basic-white);
   background-image: url("../img/background-images/Strawberry.jpg");
   background-repeat: no-repeat;
@@ -488,6 +491,7 @@
 }
 
 .subscribe-input {
+  box-sizing: border-box;
   margin-left: 20px;
   padding-left: 14px;
   margin-bottom: 35px;
@@ -505,6 +509,8 @@
 .subscribe-inner .btn {
   width: 130px;
   min-height: 44px;
+  padding: 10px 19px;
+  margin-left: 8px;
 }
 
 .main-footer {
@@ -541,6 +547,7 @@
 
 .info-list .info-item-text {
   font-weight: bold;
+  margin-bottom: 11px;
 }
 
 .info-item {
@@ -704,6 +711,7 @@
   margin-bottom: 40px;
   min-height: 130px;
 }
+
 .filter-sort {
   display: flex;
   flex-direction: column;
@@ -712,7 +720,7 @@
 .filters-wrapper {
   display: flex;
   flex-wrap: wrap;
-  height: 130px;
+  min-height: 130px;
   align-items: flex-end;
 }
 
@@ -740,7 +748,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 36px;
+  min-height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   color: var(--basic-white);
@@ -755,7 +763,7 @@
   margin-right: 15px;
   width: 196px;
   padding-left: 10px;
-  height: 36px;
+  min-height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   font-weight: 500;
@@ -783,9 +791,10 @@
 }
 
 .btn-accept {
+  padding: 9px 29px ;
   margin-left: 14px;
   width: 144px;
-  height: 36px;
+  min-height: 36px;
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
@@ -793,7 +802,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  text-align: center;
 }
 
 .btn-accept:hover {
@@ -877,6 +885,7 @@
 }
 .menu-list .btn {
   width: 200px;
+  padding: 10px 14px;
   min-height: 44px;
   margin-top: 11px;
 }
