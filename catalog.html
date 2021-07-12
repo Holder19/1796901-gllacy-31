@@ -46,7 +46,31 @@
                       <input class="input-search input-style" type="search" name="search" id="search" placeholder="Крем-брюле">
                     </form>
                 </li>
-                <li class="common-modal-item">
+                <li class="common-modal-item common-modal-login">
+                  <div class="authorization">
+                    <h2 class="visually-hidden">Авторизация</h2>
+                    <form class="form-authorization" action="https://echo.htmlacademy.ru" method="post">
+                        <p>
+                            <label class="visually-hidden " for="login-email">Логин</label>
+                            <input class="login input-style" type="email" id="login-email" name="email" placeholder="email@example.com">
+                        </p>
+                        <p>
+                            <label class="visually-hidden"  for="login-password">Пароль</label>
+                            <input class="password input-style" type="password" id="login-password" name="password" placeholder="password">
+                        </p>
+                        <div class="authorization-link-frapper">
+                          <button class="btn authorization-btn-login" type="submit">Войти</button>
+                          <div class="authorization-links">
+                            <p>
+                                <a class="forgot-password link" href="#">Забыли пароль?</a>
+                            </p>
+                            <p>
+                                <a class="registration link" href="#">Новая регистрация</a>
+                            </p>
+                          </div>
+                        </div>
+                    </form>
+                </div>
                   <a class="common-modal-btn btn-login" href="blank.html">
                     <svg class="login-icon" width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="white"/>
@@ -113,8 +137,8 @@
                         <div class="scale">
                           <div class="bar"></div>
                         </div>
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
+                        <button class="toggle toggle-min"></button>
+                        <button class="toggle toggle-max"></button>
                       </div>
                     </div>
                 <fieldset class="fat">

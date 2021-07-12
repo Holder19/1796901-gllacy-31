@@ -911,14 +911,29 @@
   border-bottom: none;
   margin-bottom: 16px;
 }
-/* окно авторизации */
+
 .authorization {
   background: var(--basic-white-dark);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
+  padding: 20px 17px;
+  min-width: 277px;
+  position: absolute;
+  display: none;
+  top: 36px;
+  left: -185px;
+  z-index: 1;
+  min-height: 214px;
+}
+
+.authorization p {
+  margin: 0;
+  padding: 0;
 }
 
 .authorization a {
+  margin: 0;
+  padding: 0;
   color: var(--basic-black);
   font-weight: normal;
   font-size: 13px;
@@ -926,25 +941,46 @@
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 
-.login {
+.login ,
+.password {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
   background: var(--basic-white);
   border: 1px solid var(--special-gray);
   border-radius: 4px;
-  color: var(--basic-gray-light);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 241px;
 }
 
-.password {
-  background: var(--basic-white);
-  border: 1px solid var(--special-gray);
-  border-radius: 4px;
-  color: var(--basic-gray-light);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+.authorization-link-frapper {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.authorization-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.authorization-btn-login {
+  padding: 10px 26px;
+  margin-right: 20px;
+}
+
+.common-modal-login {
+  position: relative;
+}
+
+.common-modal-login:hover .authorization {
+  display: block;
+}
+
 /* catalog */
 .inner-page {
   background-image: linear-gradient(
@@ -1165,7 +1201,6 @@
   border-radius: 50%;
   display: block;
   top: 8px;
-  cursor: pointer;
 }
 
 .toggle-min{
