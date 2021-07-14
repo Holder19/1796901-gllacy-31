@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>Каталог мороженого Gllacy</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -47,7 +47,7 @@
                     </form>
                 </li>
                 <li class="common-modal-item common-modal-login">
-                  <div class="authorization">
+                  <section class="authorization">
                     <h2 class="visually-hidden">Авторизация</h2>
                     <form class="form-authorization" action="https://echo.htmlacademy.ru" method="post">
                         <p>
@@ -56,7 +56,7 @@
                         </p>
                         <p>
                             <label class="visually-hidden"  for="login-password">Пароль</label>
-                            <input class="password input-style" type="password" id="login-password" name="password" placeholder="password">
+                            <input class="password input-style" type="password" id="login-password" name="password" placeholder="......">
                         </p>
                         <div class="authorization-link-frapper">
                           <button class="btn authorization-btn-login" type="submit">Войти</button>
@@ -70,7 +70,7 @@
                           </div>
                         </div>
                     </form>
-                </div>
+                </section>
                   <a class="common-modal-btn btn-login" href="blank.html">
                     <svg class="login-icon" width="20" height="19" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z" fill="white"/>
@@ -78,14 +78,40 @@
                       </svg>Вход
                   </a>
                 </li>
-                <li class="common-modal-item"><a class="btn-basket btn-basket-active" href="blank.html">
+                <li class="common-modal-item item-basket">
+                  <a class="btn-basket btn-basket-active" href="blank.html">
                   <svg class="icon-basket-catalog icon-basket" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="#343434"/>
                     <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="#343434"/>
                     <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="#343434"/>
                     <path class="icon-basket-path" d="M5.93506 4.02999L6.97297 13H17.5032L18.6923 4.02999H5.93506Z" fill="#E84D37"/>
                     </svg>2 товара
-                </a>
+                  </a>
+                    <form class="basket-modal" action="https://echo.htmlacademy.ru" method="post">
+                      <h2 class="visually-hidden" >Список товаров в корзине</h2>
+                        <div class="basket-modal-wrapper">
+                          <div class="basket-modal-item">
+                            <button type="button" class="delete-btn"><span class="visually-hidden">Удалить товар</span></button>
+                              <img src="img/creamy-ice-cream/basket-ice-cream-1.png" alt="Пломбир с апельсиновым джемом" width="32" height="32">
+                                <a href="#" class="link">Пломбир с апельсиновым джемом</a>
+                                <span class="basket-item-weight">1,5 кг х</span>
+                                <span class="basket-item-price">200 руб</span>
+                                <span class="basket-item-result">300 руб</span>
+                          </div>
+                            <div class="basket-modal-item">
+                              <button class="delete-btn" type="button"><span class="visually-hidden">Удалить товар</span></button>
+                                <img src="img/creamy-ice-cream/basket-ice-cream-2.png" alt="Клубничный пломбир с присыпкой из белого шоколада" width="32" height="32">
+                                  <a href="#" class="link">Клубничный пломбир с присыпкой<br> из белого шоколада</a>
+                                  <span class="basket-item-weight">1,5 кг х</span>
+                                  <span class="basket-item-price">300 руб</span>
+                                  <span class="basket-item-result">450 руб</span>
+                            </div>
+                              <div class="basket-price">
+                                <p class="total-price">Итого: 750 руб.</p>
+                              </div>
+                              <button type="submit" href="#" class="btn">Оформить заказ</button>
+                    </div>
+                </form>
                 </li>
               </ul>
             <div class="work-info">
@@ -137,8 +163,8 @@
                         <div class="scale">
                           <div class="bar"></div>
                         </div>
-                        <button class="toggle toggle-min"></button>
-                        <button class="toggle toggle-max"></button>
+                        <button type="button" class="toggle toggle-min"></button>
+                        <button type="button" class="toggle toggle-max"></button>
                       </div>
                     </div>
                 <fieldset class="fat">
@@ -219,8 +245,7 @@
               </li>
               <li class="card-list-item">
                   <div class="card-list-wrapper">
-                    <img src="img/creamy-ice-cream/ice-cream-5.png" width="267" height="267" alt="Сливочное с брусничным
-                                    джемом" />
+                    <img src="img/creamy-ice-cream/ice-cream-5.png" width="267" height="267" alt="Сливочное с брусничным джемом" />
                     <p class="price">325 ₽<span class="weight">/кг</span></p>
                     <a class="link" href="#">Сливочное с брусничным джемом</a>
                     <button class="btn hidden-btn">Быстрый просмотр</button>
@@ -350,7 +375,7 @@
                   </svg>
               </a>
             </li>
-            <li >
+            <li class="social-item">
               <a class="btn-social" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0ZM23.94 12.81C23.69 19.33 20.48 23.64 12.94 23.51H12.46C12.01 23.51 7.91001 23.07 7.11001 21.69C8.8989 21.9555 10.7228 21.5494 12.23 20.55C11.18 20.26 9.31001 20.09 8.98001 17.7C9.39279 17.8642 9.84415 17.9058 10.28 17.82C9.00001 17 7.53001 16.3 7.61001 14.17C8.02796 14.4893 8.54454 14.652 9.07001 14.63C8.30001 14.4 6.92001 11.39 8.07001 9.85C10.07 11.64 12.14 13.33 15.87 13.49C16.1 11.28 17.11 9.79 19.04 9.17C19.7375 8.93332 20.4908 8.91568 21.1986 9.11946C21.9065 9.32323 22.5351 9.73867 23 10.31C23.74 10.08 24.45 9.84 25.19 9.62C25.1758 9.95711 25.0846 10.2865 24.9234 10.5829C24.7622 10.8793 24.5353 11.1349 24.26 11.33C24.5167 11.3601 24.7768 11.3336 25.0221 11.2524C25.2674 11.1712 25.492 11.0372 25.68 10.86C25.5628 11.2985 25.3443 11.7034 25.0421 12.0421C24.7399 12.3808 24.3624 12.6438 23.94 12.81Z" fill="white" fill-opacity="0.8"/>
@@ -388,26 +413,6 @@
       </div>
     </footer>
   </div>
-    <!-- <section class="authorization">
-          <h2>Авторизация</h2>
-          <form class="form-authorization" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                  <label for="login-email">Логин</label>
-                  <input class="login" type="email" id="login-email" name="email" placeholder="email@example.com">
-              </p>
-              <p>
-                  <label for="login-password">Пароль</label>
-                  <input class="password" type="password" id="login-password" name="password" placeholder="password">
-              </p>
-              <p>
-                  <a class="forgot-password link" href="#">Забыли пароль?</a>
-              </p>
-              <p>
-                  <a class="registration link" href="#">Новая регистрация</a>
-              </p>
-              <button class="btn btn-login" type="submit">Войти</button>
-          </form>
-      </section> -->
 </body>
 
 </html>
