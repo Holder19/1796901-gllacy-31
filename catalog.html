@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <title>Каталог мороженого Gllacy</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -144,9 +144,9 @@
             <h2 class="visually-hidden">фильтры</h2>
                 <form class="filters-wrapper" method="get" action="https://echo.htmlacademy.ru">
                   <fieldset class="sort">
-                    <legend class="filter-title">Сортировка:</legend>
+                    <label for="sort" class="filter-title">Сортировка:</label>
                       <div class="select-wrapper">
-                        <select class="wrapper-sort" name="sort">
+                        <select id="sort" class="wrapper-sort" name="sort">
                         <option value="popular" selected>по популярности</option>
                         <option value="up-price">сначала недорогие</option>
                         <option value="down-price">сначала дорогие</option>
@@ -240,7 +240,7 @@
                   <div class="card-list-wrapper">
                     <img src="img/creamy-ice-cream/ice-cream-4.png" width="267" height="267" alt="Крем-брюле с карамелькой"/>
                     <p class="price">415 &#8381;<span class="weight">/кг</span></p>
-                    <a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+                    <a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                     <button class="btn hidden-btn">Быстрый просмотр</button>
                   </div>
               </li>
@@ -248,7 +248,7 @@
                   <div class="card-list-wrapper">
                     <img src="img/creamy-ice-cream/ice-cream-5.png" width="267" height="267" alt="С брусничным джемом" />
                     <p class="price">325 &#8381;<span class="weight">/кг</span></p>
-                    <a class="link" href="#">Сливочное с брусничным джемом</a></p>
+                    <a class="link" href="#">Сливочное с брусничным <br>джемом</a>
                     <button class="btn hidden-btn">Быстрый просмотр</button>
                   </div>
               </li>
@@ -280,7 +280,7 @@
                   <div class="card-list-wrapper">
                     <img src="img/creamy-ice-cream/ice-cream-9.png" width="267" height="267" alt="Ванильное с шоколадом"/>
                     <p class="price">440 &#8381;<span class="weight">/кг</span></p>
-                    <a class="link" href="#">Сливочно-ванильное с кусочками шоколада</a></p>
+                    <a class="link" href="#">Сливочно-ванильное <br>с кусочками шоколада</a>
                     <button class="btn hidden-btn">Быстрый просмотр</button>
                   </div>
               </li>
@@ -304,7 +304,7 @@
                   <div class="card-list-wrapper">
                     <img src="img/creamy-ice-cream/ice-cream-12.png" width="267" height="267" alt="С мятным сиропом" />
                     <p class="price">420 &#8381;<span class="weight">/кг</span></p>
-                    <a class="link" href="#">Сливочное с мятным сиропом</a></p>
+                    <a class="link" href="#">Сливочное с мятным сиропом</a>
                     <button class="btn hidden-btn">Быстрый просмотр</button>
                   </div>
               </li>
@@ -402,7 +402,7 @@
         <section class="footer-copyright">
           <h2 class="visually-hidden">Копирайт</h2>
           <a class="logo-academy">
-            <img src="img/icon/logo-HTML-Academy.svg" width="108" height="31" alt="Логотип Академии">
+            <img src="img/icon/logo-html-academy.svg" width="108" height="31" alt="Логотип Академии">
           </a>
           <p>
             Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2021

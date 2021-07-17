@@ -95,6 +95,7 @@
 .index-slider-btn {
   display: inline-block;
   width: 261px;
+  vertical-align: middle;
   min-height: 62px;
   font-size: 32px;
   line-height: 44px;
@@ -152,7 +153,7 @@
 }
 
 .main-header-logo {
-  margin-right: 24px;
+  margin-right: 10px;
   width: 154px;
   height: 64px;
 }
@@ -229,6 +230,7 @@
 .catalog-item {
   position: relative;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .dropdown {
@@ -281,7 +283,7 @@
 
 .user-navigation {
   min-width: 280px;
-  padding-top: 10px;
+  padding-top: 13px;
 }
 
 .common-modal {
@@ -307,7 +309,7 @@
 
 .work-info {
   text-align: right;
-  margin-top: 31px;
+  margin-top: 23px;
 }
 
 .btn-search {
@@ -494,6 +496,7 @@
   background-image: url("../img/background-images/raspberry-background.jpg");
   min-width: 560px;
   height: 100%;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -539,7 +542,9 @@
   min-width: 560px;
   height: 100%;
   border-radius: 16px;
+  background-size: cover;
 }
+
 .index-banner-chocolate .btn-link {
   width: 191px;
 }
@@ -565,6 +570,8 @@
 .card-list-wrapper {
   position: relative;
   z-index: 2;
+  display: block;
+  min-height: 321px;
 }
 
 .card-list-wrapper:hover {
@@ -728,7 +735,7 @@
   width: 560px;
   min-height: 220px;
   background-color: var(--basic-white);
-  background-image: url("../img/background-images/Strawberry.jpg");
+  background-image: url("../img/background-images/strawberry.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
   padding-left: 20px;
@@ -783,7 +790,7 @@
 .subscribe p {
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -844,6 +851,7 @@
 .btn-social {
   display: inline-block;
   border-radius: 50%;
+  vertical-align: middle;
   width: 36px;
   height: 36px;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -895,14 +903,7 @@
   align-items: center;
 }
 
-.footer-social {
-  min-width: 164px;
-  justify-self: start;
-  margin: 0;
-}
-
 .footer-info {
-  justify-self: center;
   max-width: 340px;
 }
 
@@ -910,8 +911,6 @@
   display: flex;
   flex-direction: column;
   min-width: 190px;
-  justify-self: end;
-  margin: 0;
 }
 
 .footer-copyright p {
@@ -1001,7 +1000,7 @@
     180deg,
     rgba(255, 255, 255, 0.2) 0%,
     rgba(255, 255, 255, 0) 100%);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1027,6 +1026,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 4px;
 }
 
 .phone-number {
@@ -1098,7 +1098,7 @@
   line-height: 41px;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 17px;
 }
 
 .filters-wrapper {
@@ -1113,6 +1113,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  margin-top: 12px;
 }
 
 .filter-title {
@@ -1122,6 +1123,7 @@
   line-height: 16px;
   margin-bottom: 7px;
   margin-left: 15px;
+  display: block;
 }
 
 .filter-title label {
@@ -1440,10 +1442,10 @@
   position: absolute;
   background-color: var(--basic-white);
   width: 303px;
-  height: 306px;
+  min-height: 306px;
   border-radius: 16px;
   color: var(--basic-black);
-  padding: 29px 25px;
+  padding: 32px 25px;
   top: 62px;
   right: 27px;
 }
@@ -1484,7 +1486,6 @@
 }
 
 .modal {
-  position: fixed;
   display: none;
   width: 477px;
   min-height: 441px;
