@@ -325,12 +325,13 @@
       </div>
     </footer>
   </div>
+  <div class="feedback-overlay"></div>
   <section class="modal">
     <h2>Мы обязательно вам ответим!</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-    <input class="input-style modal-input" type="text" id="modal-login" name="modal-login" placeholder="Имя Фамилия">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <input class="input-style modal-input modal-login" type="text" id="modal-login" name="modal-login" placeholder="Имя Фамилия">
     <label class="visually-hidden" for="modal-login">Введите ваше имя</label>
-    <input class="input-style modal-input" type="email" id="modal-email" name="modal-email" placeholder="email@example.com">
+    <input class="input-style modal-input modal-email" type="email" id="modal-email" name="modal-email" placeholder="email@example.com">
     <label class="visually-hidden" for="modal-email">Введите вашу почту</label>
     <textarea class="input-style" name="feedback" id="feedback-text" placeholder="В свободной форме"></textarea>
     <label class="visually-hidden" for="feedback-text">Введите ваше сообщение</label>
@@ -338,5 +339,6 @@
     <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
   </form>
   </section>
+  <script src="js/popup.min.js"></script>
 </body>
 </html>
